@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai-Verse</title>
+
+    <!-- linking external css modules -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- linking css -->
+     <link rel="stylesheet" href="styles/style.css">
+     <link rel="stylesheet" href="styles/navbar.css">
+     <link rel="stylesheet" href="styles/home.css">
+     <link rel="stylesheet" href="styles/download.css">
+     <link rel="stylesheet" href="styles/installation.css">
+     <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    
+
+    <!-- navbar start -->
+
+    <div class="navbar">
+
+        <div class="head">AI-Verse</div>
+
+        <ul class="items">
+            <li onclick="scrolll('home')">Home</li>
+            <li onclick="scrolll('download')">Download</li>
+            <li onclick="scrolll('install')">Installation</li>
+            <li><a href="contact.html">Conatct us</a></li>
+        </ul>
+    </div>
+    
+    <!-- navbar end -->
+
+
+
+    <!-- Home start -->
+
+    <div id="home" class="home">
+
+        <img class="main-bg" src="images/background4.avif" alt="Background image">
+
+        <div class="main-head">
+            <p class="main-title">Ai-Verse</p>
+            <p class="main-subtitle">The new gen Ai</p>
+        </div>
+
+    </div>
+
+    <!-- Home end -->
+
+
+    <!-- download starts -->
+
+    <div id="download" class="download">
+        <h2 class="download-head">Download</h2>
+        <div class="main-btn">
+            <a href="ai-verse.zip"><button class="download-btn"> <i class='bx bxl-windows'></i> Download for Windows</button></a>
+        </div>
+        <h2 class="download-head2">versions:</h2>
+        <div class="versions">
+            <span>1.0.0</span>
+        </div>
+    </div>
+
+    <!-- download ends -->
+
+    <!-- How to install start -->
+
+    <div id="install" class="installation">
+        <h2>Installation</h2>
+        <div class="video-box">
+            <video src="videos/downloadvdo.mp4" class="install-vdo" autoplay loop muted controls></video>
+        </div>
+    </div>
+
+    <!-- How to install ends -->
+
+
+    <!-- linking js -->
+     <script src="js/script.js"></script>
+
+</body>
+</html>

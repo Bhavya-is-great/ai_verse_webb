@@ -1,0 +1,19 @@
+.installation{
+    margin-bottom: 20px;
+}
+
+.installation h2{
+    font-size: 34px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.installation .video-box{
+    display: flex;
+    justify-content: center;
+}
+
+.installation .video-box .install-vdo{
+    width: 600px;
+    height: 400px;
+}

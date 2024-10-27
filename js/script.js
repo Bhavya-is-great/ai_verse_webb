@@ -16,15 +16,34 @@ function detectOperatingSystem() {
     }
 }
 
-// Example usage
-const os = detectOperatingSystem();
-console.log("Detected Operating System:", os);
 
-// Redirect to error.html if not Windows
 
-if (os !== "Windows") {
-    window.location.href = "error.html";
+
+const openNav = document.getElementById('open');
+const closeNav = document.getElementById('close');
+const opcl = document.getElementById('opcl');
+
+if (openNav && closeNav && opcl) {
+    openNav.addEventListener('click',() => {
+        opcl.checked = true;
+    })
+    
+    closeNav.addEventListener('click',() => {
+        opcl.checked = false;
+    })
 }
+
+
+
+// Example usage
+// const os = detectOperatingSystem();
+// console.log("Detected Operating System:", os);
+
+// // Redirect to error.html if not Windows
+
+// if (os !== "Windows") {
+//     window.location.href = "error.html";
+// }
 
 
 
@@ -38,10 +57,10 @@ function checkScreenWidth() {
 
     // console.log(screenWidth)
     // Check if the screen width is less than or equal to the maxTabletWidth
-    if (screenWidth <= maxTabletWidth) {
-        // Redirect to error.html
-        window.location.href = "error.html";
-    }
+    // if (screenWidth <= maxTabletWidth) {
+    //     // Redirect to error.html
+    //     window.location.href = "error.html";
+    // }
 }
 
 // Call the function to check screen width

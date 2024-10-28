@@ -1,0 +1,74 @@
+.about{
+    display: flex;
+    background: linear-gradient(to right,rgb(167, 255, 255),white,white,white,rgb(167, 255, 255));
+    margin-bottom: 50px;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.about .owner_photo{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about .owner_photo img {
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+}
+
+
+.about .owner_info {
+    width: calc(100% - 300px);
+    height: calc(100% - 20px);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+
+.aboutt .about_head{
+    font-size: 34px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+@media (max-width:350px) {
+    .aboutt .about_head{
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width: 1160px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(white,rgb(167, 255, 255),white);
+    }
+
+    .about .owner_info{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .owner_info{
+        width: calc(100% - 100px);
+    }
+}
+
+@media (max-width: 400px) {
+    .about .owner_info{
+        width: calc(100% - 50px);
+    }
+}
